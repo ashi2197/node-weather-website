@@ -1,4 +1,4 @@
-console.log('CLIENT SIDE JS LOADED')
+//console.log('CLIENT SIDE JS LOADED')
 
 /*
 fetch('http://localhost:3000/weather?address=boston').then((response) => {
