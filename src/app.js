@@ -15,6 +15,9 @@ console.log(__dirname)
 
 
 const app = express()
+//heroku
+const port = process.env.PORT || 3000
+
 //define path for Express config
 //static file
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -145,6 +148,8 @@ app.get('*',(req,res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server started on port 3000')
+app.listen(port, () => {
+    console.log('Server started on port ' + port)
 })
+
+
